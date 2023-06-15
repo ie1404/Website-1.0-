@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>1.0.2</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        function displayDateTime() {
+            var currentDate = new Date();
+            var dateElement = document.getElementById("date");
+            var timeElement = document.getElementById("time");
+                
+            dateElement.innerHTML = currentDate.toLocaleDateString();
+            timeElement.innerHTML = currentDate.toLocaleTimeString();
+        }
+    
+            
+        setInterval(displayDateTime, 1000);
+    </script>
+</head>
+    <body>
+
+        <div class="header">
+            <ul class="menu">
+                <li class="logo">
+                    <img src="images/logo.jpg">
+                </li>
+                
+                <li><a href="./index.html" >Home</a></li>
+                <li><a href="./tours.html" >Tours</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li class="date-time">
+                    <span id="date" class="date"></span>
+                    <span id="time" class="time"></span>
+                </li>
+            </ul>
+        </div>    
+        <form class="contact">
+            <h1>Contact us</h1>
+            <h3>Name:</h3>
+            <input type="text">
+            <h3>Email:</h3>
+            <input type="email">
+            <h3>Enquiry:</h3>
+            <textarea></textarea>
+            <button>Submit</button>
+        </form>
+        
+<!--         
+        <footer class="footer">
+            <p>Email:20230757@mywhitecliffe.com</p>
+        </footer> -->
+    </body>
+</html>
